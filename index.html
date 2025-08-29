@@ -1,0 +1,71 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<section class="container">
+ <div class="signal-list">
+   <img src="/rock paper scissors master/Images/logo-bonus.svg" alt="logo-image" />
+ </div>
+ <div class="score-count">
+   <h2>SCORE</h2>
+<h1 id="score-num">12</h1>
+ </div>
+</section>
+
+  <!--Game UI Conatainer-->
+<section class="game-container">
+  <div class="pentagon">
+    <img src="/rock paper scissors master/Images/bg-pentagon.svg" alt="" class="pentagon-image" />
+    <button class="rock"><img src="/rock paper scissors master/Images/icon-rock.svg" alt="rock" /> </button>
+    <button class="paper"><img src="/rock paper scissors master/Images/icon-paper.svg" alt = "paper" /> </button>
+    <button class="scissors"><img src="/rock paper scissors master/Images/icon-scissors.svg" alt="scissors" /></button>
+    <button class="spock"><img src="/rock paper scissors master/Images/icon-spock.svg" alt="spock" /> </button>
+    <button class="lizard"><img src="/rock paper scissors master/Images/icon-lizard.svg" alt="lizard" /> </button>
+  </div>
+  
+</section>
+<section class="section-winner">
+  <div class="section-picked">
+    <div class="human">
+      <img src="" alt="" id="image"/>
+    </div>
+    <div class="computer">
+      <img src="" alt="" id="computer-image"/>
+    </div>
+  </div>
+  <div class="text-picked">
+    <p id="human-text">YOU PICKED</p>
+    <p id="computer-text">THE HOUSE PICKED</p>
+  </div>
+  <div class="win-lose">
+    <h1>YOU WIN </h1>
+    <button class="play-again">PLAY AGAIN</button>
+  </div>
+</section>
+
+   <div class="modal hidden">
+     <h1>RULES</h1>
+     <button class="close-modal">&times;</button>
+     <img src="/rock paper scissors master/Images/image-rules-bonus.svg" alt="rules">
+   </div>
+   <div class="button">
+     <button class="rules">RULES</button>
+   </div>
+   <div>
+     <audio id="win-sound" src="/sound/loose.mp3"></audio>
+<audio id="loss-sound" src="/sound/win.mp3"></audio>
+<audio id="game-sound" src="draw.mp3"></audio>
+<audio id="showdown" src="/sound/showdown.mp3"></audio>
+   </div>
+   
+   <script src="script.js"></script>
+ </body>
+
+</html>
+
